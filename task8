@@ -1,0 +1,15 @@
+money_capital = 10000
+salary = 5000
+spend = 6000
+increase = 0.05
+
+month = 0  # количество месяцев, которое можно прожить
+rest = money_capital + salary - spend
+while rest >= 0:
+    month += 1
+    spend = spend*(1 + increase)
+    rest = rest + salary - spend
+
+# TODO Оформить решение
+
+print(month)
